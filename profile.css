@@ -1,0 +1,87 @@
+body{
+    background-color: grey;
+}
+.padd{
+    padding: 3%;
+}
+.color{
+    background-color: none;
+    padding: 5%;
+    width: fit-content;
+    transform-style: preserve-3d;
+    animation: flip 0.5s;
+}
+.invalid{
+    color: red;
+}
+.valid{
+    color: green;
+}
+.pers{
+    perspective: 5000px;
+}
+.image img{
+    width: 75px;
+    height: 75px;
+}
+.icon{
+    cursor: pointer;
+    padding: 5%;
+    border-bottom: 1px solid grey;
+    transition: transform 0.2s;
+}
+.icon:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 15px 10px -15px #111;
+    border-radius: 15%;
+}
+.card-button{
+    text-align:center;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 2%;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+.card-button:hover{
+    color: red;
+    background-color: white;
+    box-shadow: 3px 5px 3px red;
+}
+.form-pad{
+    padding-top:10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.submit-button{
+    text-align: center;
+    background-color: #357cfd;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 2%;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+.pad-button{
+    padding: 3%;
+}
+#xo{
+    display: none;
+}
+@keyframes flip{
+    from{transform: rotateY(90deg);}
+    to{transform: rotateY(0deg);}
+}
+@media screen and (max-width: 900px) {
+    #row{
+        display: none;
+    }
+    #xo{
+        display: block;
+    }
+}
